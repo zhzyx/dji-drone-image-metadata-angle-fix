@@ -14,16 +14,16 @@ def arg_parse():
     return parser.parse_args()
 
 def get_roll(element):
-    return element[0][0].attrib['{http://www.dji.com/drone-dji/1.0/  }GimbalRollDegree']
+    return element[0][0].attrib['{http://www.dji.com/drone-dji/1.0/}GimbalRollDegree']
 
 def set_roll(element, val):
-    element[0][0].attrib['{http://www.dji.com/drone-dji/1.0/  }GimbalRollDegree']  = val
+    element[0][0].attrib['{http://www.dji.com/drone-dji/1.0/}GimbalRollDegree']  = val
 
 def get_yaw(element):
-    return element[0][0].attrib['{http://www.dji.com/drone-dji/1.0/  }GimbalYawDegree']
+    return element[0][0].attrib['{http://www.dji.com/drone-dji/1.0/}GimbalYawDegree']
 
 def set_yaw(element, val):
-    element[0][0].attrib['{http://www.dji.com/drone-dji/1.0/  }GimbalYawDegree']  = val
+    element[0][0].attrib['{http://www.dji.com/drone-dji/1.0/}GimbalYawDegree']  = val
 
 def fix_dji_gimbal_metadata(path):
     try:
